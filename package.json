@@ -1,0 +1,16 @@
+{
+  "name": "smart-contract-dev-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/JL978/smart-contract-dev-template.git",
+  "author": "Jimmy Lam <JimmyLam978@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.6",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "chai": "^4.3.6",
+    "ethereum-waffle": "^3.4.4",
+    "hardhat": "^2.9.5"
+  }
+}
