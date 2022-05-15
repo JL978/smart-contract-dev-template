@@ -1,10 +1,16 @@
-# Advanced Sample Hardhat Project
+# Blockchain Hardhat Project Template
 
-This project demonstrates an advanced Hardhat use case, integrating other tools commonly used alongside Hardhat in the ecosystem.
+This project is a boilerplate template project created by adding on to the hardhat advanced typescript template provided when running `npx hardhat`. 
 
-The project comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts. It also comes with a variety of other tools, preconfigured to work with the project code.
-
-Try running some of the following tasks:
+## Custom commands
+```shell
+# To get started with the project, run the following commands in 2 separate shells
+# Start the local blockchain node (need to be kept running)
+yarn run-local-node
+# Deploy the project to the local blockchain node (run deploy script 1 to deploy to the local hardhat node)
+yarn deploy-local
+```
+## Some of the default hardhat commands:
 
 ```shell
 npx hardhat accounts
@@ -25,7 +31,7 @@ npx solhint 'contracts/**/*.sol'
 npx solhint 'contracts/**/*.sol' --fix
 ```
 
-# Etherscan verification
+## Other Hardhat Stuff
 
 To try out Etherscan verification, you first need to deploy a contract to an Ethereum network that's supported by Etherscan, such as Ropsten.
 
@@ -41,6 +47,6 @@ Then, copy the deployment address and paste it in to replace `DEPLOYED_CONTRACT_
 npx hardhat verify --network ropsten DEPLOYED_CONTRACT_ADDRESS "Hello, Hardhat!"
 ```
 
-# Performance optimizations
+### Performance optimizations
 
 For faster runs of your tests and scripts, consider skipping ts-node's type checking by setting the environment variable `TS_NODE_TRANSPILE_ONLY` to `1` in hardhat's environment. For more details see [the documentation](https://hardhat.org/guides/typescript.html#performance-optimizations).
